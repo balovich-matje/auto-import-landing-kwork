@@ -98,9 +98,22 @@ button, input, select, textarea {
 }
 
 .navbar__logo-img {
-    height: 40px;
+    height: 44px;
     width: auto;
     object-fit: contain;
+}
+
+.footer__brand .navbar__logo-img {
+    height: auto;
+    width: 180px;
+}
+
+.footer__brand .navbar__logo-text {
+    display: none;
+}
+
+.footer__brand .navbar__logo {
+    margin-bottom: 8px;
 }
 
 .navbar__logo-text {
