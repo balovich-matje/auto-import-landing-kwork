@@ -7,9 +7,14 @@
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
     --text-muted: #666666;
-    --accent: #e63946;
-    --accent-hover: #ff4d5a;
-    --accent-glow: rgba(230, 57, 70, 0.3);
+    --accent: #c22a33;
+    --accent-hover: #e03440;
+    --accent-glow: rgba(194, 42, 51, 0.3);
+    --accent-blue: #1e4d8c;
+    --accent-blue-hover: #2563a8;
+    --accent-blue-glow: rgba(30, 77, 140, 0.3);
+    --accent-gold: #d4a017;
+    --accent-gold-glow: rgba(212, 160, 23, 0.25);
     --border: #2a2a2a;
     --radius: 12px;
     --radius-sm: 8px;
@@ -87,19 +92,17 @@ button, input, select, textarea {
 }
 
 .navbar__logo {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 1px;
     display: flex;
-    gap: 0;
+    align-items: center;
 }
 
-.logo-auto {
-    color: var(--text-primary);
-}
-
-.logo-import {
-    color: var(--accent);
+.navbar__logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #fff;
+    padding: 4px 8px;
 }
 
 .navbar__nav {
@@ -190,12 +193,12 @@ button, input, select, textarea {
 .hero__badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(230, 57, 70, 0.15);
-    border: 1px solid rgba(230, 57, 70, 0.3);
+    background: rgba(30, 77, 140, 0.2);
+    border: 1px solid rgba(30, 77, 140, 0.4);
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--accent);
+    color: #5a9bd5;
     margin-bottom: 24px;
 }
 
@@ -240,7 +243,7 @@ button, input, select, textarea {
 .hero__stat-number {
     font-size: 1.8rem;
     font-weight: 800;
-    color: var(--text-primary);
+    color: var(--accent-gold);
 }
 
 .hero__stat-label {
@@ -290,7 +293,7 @@ button, input, select, textarea {
 .btn--small {
     padding: 8px 20px;
     font-size: 0.85rem;
-    background: var(--accent);
+    background: var(--accent-blue);
     color: #fff;
     border-radius: var(--radius-sm);
     border: none;
@@ -300,7 +303,7 @@ button, input, select, textarea {
 }
 
 .btn--small:hover {
-    background: var(--accent-hover);
+    background: var(--accent-blue-hover);
     transform: translateY(-1px);
 }
 
@@ -355,7 +358,7 @@ button, input, select, textarea {
 }
 
 .advantage-card:hover {
-    border-color: rgba(230, 57, 70, 0.3);
+    border-color: rgba(30, 77, 140, 0.4);
     background: var(--bg-card-hover);
     transform: translateY(-4px);
 }
@@ -366,9 +369,9 @@ button, input, select, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(230, 57, 70, 0.1);
+    background: rgba(30, 77, 140, 0.15);
     border-radius: var(--radius-sm);
-    color: var(--accent);
+    color: var(--accent-blue);
     margin-bottom: 20px;
 }
 
@@ -458,7 +461,7 @@ button, input, select, textarea {
 .car-card__price {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--accent-gold);
 }
 
 /* ===== CALCULATOR ===== */
@@ -544,7 +547,7 @@ button, input, select, textarea {
 .calc__result-price {
     font-size: 2.4rem;
     font-weight: 900;
-    color: var(--accent);
+    color: var(--accent-gold);
     margin-bottom: 16px;
 }
 
@@ -621,11 +624,11 @@ button, input, select, textarea {
     align-items: center;
     justify-content: center;
     background: var(--bg-card);
-    border: 2px solid var(--accent);
+    border: 2px solid var(--accent-blue);
     border-radius: 50%;
     font-size: 1.1rem;
     font-weight: 800;
-    color: var(--accent);
+    color: var(--accent-blue);
     position: relative;
     z-index: 1;
 }
@@ -685,7 +688,7 @@ button, input, select, textarea {
 }
 
 .about__contact svg {
-    color: var(--accent);
+    color: var(--accent-blue);
     min-width: 20px;
 }
 
