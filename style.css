@@ -104,12 +104,7 @@ button, input, select, textarea {
 }
 
 .footer__brand .navbar__logo-img {
-    height: auto;
-    width: 180px;
-}
-
-.footer__brand .navbar__logo-text {
-    display: none;
+    height: 48px;
 }
 
 .footer__brand .navbar__logo {
